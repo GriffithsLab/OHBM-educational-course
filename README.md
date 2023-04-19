@@ -1,1 +1,0 @@
-# OHBM-educational-course
