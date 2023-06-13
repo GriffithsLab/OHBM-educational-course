@@ -251,5 +251,6 @@ sphinx_gallery_conf = {'filename_pattern': '(?=.*r__)(?=.*.py)',
                        'within_subsection_order': FileNameSortKey, #'default_thumb_file': 'img/whobpyt_logo.png',
                        'backreferences_dir': 'generated',   # Where to drop linking files between examples & API
                        #doc_module': ('whobpyt'),
+                       'dont_preprocesses': ('.txt', '.ipynb', '.md', '.rst'),  # Add this line
                        'reference_url': {'OHBM_whole_brain_modelling_course': None},
                        'remove_config_comments': True}
