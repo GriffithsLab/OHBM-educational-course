@@ -21,7 +21,7 @@ jobs:
         pip install .
     - name: Build docs
       run: |
-        cd doc
+        cd docs
         mkdir _static
         make html
     - name: Deploy Docs
