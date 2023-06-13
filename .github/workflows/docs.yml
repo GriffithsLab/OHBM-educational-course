@@ -1,0 +1,32 @@
+name: Docs
+
+on:
+  push:
+    branches: [ main]
+  pull_request:
+    branches: [ main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install .
+    - name: Build docs
+      run: |
+        cd doc
+        mkdir _static
+        make html
+    - name: Deploy Docs
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/dev'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/build/html

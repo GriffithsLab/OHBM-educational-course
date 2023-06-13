@@ -5,8 +5,7 @@
 .. contents:: Table of Contents
    :local:
 
-Agenda
--------------
+
 
 .. raw:: html
 
