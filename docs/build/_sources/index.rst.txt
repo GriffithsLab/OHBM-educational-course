@@ -17,6 +17,8 @@ Welcome to the OHBM Whole-brain modelling Course's documentation!
    :caption: Contents:
 
    course_contents/01_Background_Theory/01_Background_Theory.rst
+   course_contents/02_Systems_Cognitive/02_Systems_Cognitive.rst
+   course_contents/03_Clinical/03_Clinical.rst
 
 Indices and tables
 ==================
