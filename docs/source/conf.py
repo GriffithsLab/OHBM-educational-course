@@ -41,6 +41,7 @@ from sphinx.locale import _
 project = 'OHBM_whole_brain_modelling_course'
 copyright = '2023, Davide Momi, Joana Cabral, John Griffiths'
 author = 'Davide Momi, Joana Cabral, John Griffiths'
+slug = re.sub(r'\W+', '-', project.lower())
 version = '0.0.0'
 release = '0.0.0'
 language = 'en'
