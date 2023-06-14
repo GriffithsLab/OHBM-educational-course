@@ -1,0 +1,1517 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1 Background Theory &mdash; OHBM_whole_brain_modelling_course 0.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-dataframe.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="../_static/debug.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> OHBM_whole_brain_modelling_course
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../course_contents/01_Background_Theory/01_Background_Theory.html">1) Background / Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../course_contents/02_Systems_Cognitive/02_Systems_Cognitive.html">2) Systems Cognitive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../course_contents/03_Clinical/03_Clinical.html">3) Clinical</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OHBM_whole_brain_modelling_course</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>1 Background Theory</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-01-background-theory-py"><span class="std std-ref">here</span></a>     to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="background-theory">
+<span id="sphx-glr-auto-examples-01-background-theory-py"></span><h1>1 Background Theory<a class="headerlink" href="#background-theory" title="Permalink to this headline">¶</a></h1>
+<p>What is being modeled:</p>
+<ul class="simple">
+<li><p>Created a Sphere’d Cube (chosen points on cube projected onto radius = 1 sphere), so that regions were more evently distributed. All corners of cube chosen as regions, thus there are 8 regions.</p></li>
+<li><p>EEG channels located on the center of each face of the cube. Thus there are 6 EEG channels.</p></li>
+<li><p>Added some randomness to initial values - to decorrelate the signals a bit. Looking for FC matrix to look similar to SC matrix.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ## 1) Background / Theory</span>
+<span class="c1">#</span>
+<span class="c1"># 08:00-08:50 ~~ MORNING COFFEE &amp; GREETS</span>
+<span class="c1">#</span>
+<span class="c1"># 08:50-09:00 - Intro to the workshop [Davide Momi](https://scholar.google.com/citations?user=I-BACCgAAAAJ&amp;hl=en&amp;oi=ao)/[John Griffiths](https://scholar.google.com/citations?user=xwkt6aQAAAAJ&amp;hl=en&amp;oi=ao)&lt;br&gt;</span>
+<span class="c1"># 09:00-09:45 - Intro to dynamics [Viktor Jirsa](https://scholar.google.com/citations?user=0ZVdLpMAAAAJ&amp;hl=en) &lt;br&gt;</span>
+<span class="c1"># 09:45-10:30 - Intro to connectivity [Joana Cabral](https://scholar.google.com/citations?user=v3ZEOeMAAAAJ&amp;hl=en&amp;oi=ao) &lt;br&gt;</span>
+<span class="c1"># 10:30-11:15 - Intro to connectome-based neural mass modeling [Sorenza Bastiaens](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Sorenza+Bastiaens&amp;btnG=) &lt;br&gt;</span>
+<span class="c1"># 11:15-12:15 - Hands-on Session 1 [Davide Momi](https://scholar.google.com/citations?user=I-BACCgAAAAJ&amp;hl=en&amp;oi=ao)/[John Griffiths](https://scholar.google.com/citations?user=xwkt6aQAAAAJ&amp;hl=en&amp;oi=ao)&lt;br&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># 12:15-13:00 ~~ LUNCH</span>
+
+<span class="c1"># In[27]:</span>
+
+
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install mne&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install nilearn&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install nibabel&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install tvb-library&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install gdown&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install matplotlib&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install Pillow&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install seaborn&#39;</span><span class="p">)</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install pandoc&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># In[13]:</span>
+
+
+<span class="kn">import</span> <span class="nn">gdown</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="n">file_id</span> <span class="o">=</span> <span class="s2">&quot;1xJfB8r0tbpnN5nHYund0hIRO2StZDUby?usp=sharing&quot;</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;./data&quot;</span>
+
+<span class="n">gdown</span><span class="o">.</span><span class="n">download_folder</span><span class="p">(</span>
+    <span class="nb">id</span><span class="o">=</span><span class="n">file_id</span><span class="p">,</span>
+    <span class="n">output</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
+
+
+<span class="c1"># In[25]:</span>
+
+
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+
+<span class="c1"># Path to the image file on Google Drive</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="s1">&#39;./data/Speakers_1.png&#39;</span>
+
+<span class="n">image_array</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+
+
+<span class="c1"># Plot the image using Matplotlib</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>  <span class="c1"># Adjust the size as needed</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_array</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>  <span class="c1"># Optional: Remove axes</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="c1"># -----</span>
+<span class="c1">#</span>
+<span class="c1"># ## Contents</span>
+<span class="c1">#</span>
+
+<span class="c1"># [Overview](#overview)</span>
+<span class="c1"># [Setup](#setup)</span>
+<span class="c1"># [Neural mass model of local neural dynamics](#neural-mass-model-of-local-neural-dynamics)</span>
+<span class="c1"># [Network model of whole-brain anatomical connectivity](#network-model-of-whole-brain-anatomical-connectivity)</span>
+<span class="c1"># [Conclusions](#conclusions)</span>
+<span class="c1"># [References](#references)</span>
+
+<span class="c1"># ### Overview</span>
+
+<span class="c1"># This is the Hands-on Session #1 of the OHBM&#39;s Educational Course entitled &quot;Whole-brain, Connectome-based Models of Brain Dynamics: From Principles to Applications&quot;</span>
+<span class="c1">#</span>
+<span class="c1"># In this tutorial we will cover some of the key components involved in computational modelling of mesoscopic, whole-brain network dynamics.</span>
+<span class="c1">#</span>
+<span class="c1"># The paradigm we use for mathematically and computationally describing brain organization is called &lt;b&gt;connectome-based neural mass modelling&lt;/b&gt;.</span>
+<span class="c1"># Within this framework, the two main components of setting up a whole brain model are</span>
+<span class="c1">#</span>
+<span class="c1"># 1) **node-level dynamics** and</span>
+<span class="c1"># 2) the large-scale **network topology**.</span>
+<span class="c1">#</span>
+<span class="c1"># We will examine each of these in term, for an exemplary neural mass model and brain network connectivity.</span>
+<span class="c1">#</span>
+<span class="c1"># This focus is on **resting** or &#39;steady-state&#39; (as opposed to task- or stimulus-evoked) neural activity, at the relatively **fast timescales** measured by EEG, MEG, ECoG, LFP, etc. (as opposed to slower timescale signals seen in functional MRI).</span>
+<span class="c1">#</span>
+<span class="c1"># Demonstrations are done using a combination of pure-python code and simulations run using the [**The Virtual Brain Toolbox**](https://thevirtualbrain.org/tvb/zwei) who has the purpose of offering modern tools to the Neurosciences community, for computing, simulating and analyzing functional and structural data of human brains, brains modeled at the level of population of neurons.</span>
+<span class="c1">#</span>
+
+<span class="c1"># ### Setup</span>
+
+<span class="c1"># If you are running this notebook in Google Colab, you will need to install some packages. If you are running in a more standard python environment, you need to ensure that these packages are installed externally (typically with `pip install &lt;package&gt;` on the command line).</span>
+
+<span class="c1"># In[28]:</span>
+
+
+<span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">welch</span>
+
+<span class="kn">import</span> <span class="nn">nilearn</span> <span class="k">as</span> <span class="nn">nl</span>
+<span class="kn">import</span> <span class="nn">nibabel</span> <span class="k">as</span> <span class="nn">nib</span>
+<span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="kn">import</span> <span class="n">cdist</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">mne</span>
+<span class="kn">import</span> <span class="nn">os.path</span> <span class="k">as</span> <span class="nn">op</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">signal</span>
+<span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">welch</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">fsolve</span>
+<span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">loadmat</span>
+<span class="c1"># Suppress warnings; keeps things cleaner</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="c1"># Standard scientific python import commands</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span><span class="nn">sys</span><span class="o">,</span><span class="nn">glob</span><span class="o">,</span><span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span><span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span><span class="o">,</span><span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="c1"># TVB stuff</span>
+<span class="kn">from</span> <span class="nn">tvb.simulator.lab</span> <span class="kn">import</span> <span class="p">(</span><span class="n">models</span><span class="p">,</span><span class="n">connectivity</span><span class="p">,</span><span class="n">coupling</span><span class="p">,</span><span class="n">integrators</span><span class="p">,</span><span class="n">noise</span><span class="p">,</span><span class="n">simulator</span><span class="p">,</span>
+                              <span class="n">surfaces</span><span class="p">,</span><span class="n">region_mapping</span><span class="p">,</span><span class="n">monitors</span><span class="p">,</span><span class="n">equations</span><span class="p">,</span><span class="n">patterns</span><span class="p">,</span><span class="n">plot_pattern</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">nilearn.image</span> <span class="kn">import</span> <span class="n">load_img</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">plotting</span> <span class="k">as</span> <span class="n">nplot</span>
+<span class="kn">from</span> <span class="nn">nilearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">tvb.simulator</span> <span class="kn">import</span> <span class="n">models</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interactive</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">FloatSlider</span><span class="p">,</span> <span class="n">interactive_output</span><span class="p">,</span> <span class="n">HBox</span><span class="p">,</span> <span class="n">VBox</span>
+
+
+<span class="c1"># ### Neural mass model of local neural dynamics</span>
+
+<span class="c1"># [*Jansen-Rit (1995)*](https://link.springer.com/article/10.1007/BF00199471) is a neural mass model that represents the macroscopic electrophysiological activity within a cortical column. This circuit consists of three interconnected neural populations: one for the pyramidal projection neuron and two for excitatory and inhibitory interneurons, forming two feedback loops.</span>
+<span class="c1">#</span>
+<span class="c1"># In the model, each neural population is described with two operators: a rate-to-potential operator describing the dynamics between synapses and dendritic trees, and a potential-to-rate operator representing the output firing rate produced at the soma. The model is thus structured in two steps to describe the populations and capture the dynamics of the circuit.</span>
+<span class="c1">#</span>
+<span class="c1"># The first step of the model involves transforming the average pulse density of action potentials received by the population into the average post-synaptic membrane potential. This step is known as the post-synaptic potential block and involves a linear transformation using an impulse response. The impulse response describes the dynamics between the synapses and dendritic trees:</span>
+<span class="c1">#</span>
+
+<span class="c1">#  \begin{equation}</span>
+<span class="c1">#    h(t)=\alpha \beta te^{-\beta t}    \qquad \text{for t} &gt; 0,</span>
+<span class="c1">#  \end{equation}</span>
+
+<span class="c1"># The variable $\alpha$ is defined as the maximum amplitude of the postsynaptic potential and $\beta$ represent a sum of the reciprocal of the time constant of the passive membrane and all other spatially distributed delays present in the dendritic network, condensed into a single lumped term. For the excitatory  populations $\alpha$, $\beta$ correspond to $A, a$ respectively, and for the inhibitory population $\alpha$, $\beta$ are $B, b$.</span>
+<span class="c1">#</span>
+<span class="c1">#  By convolving the incoming pulse with the impulse response, we can determine the relationship between the pulse rate and the corresponding membrane potential, and express it in the form of a second-order differential equation.</span>
+<span class="c1">#</span>
+<span class="c1"># The second step transforms the average membrane potential of the population into the average rate of action potentials fired by the neurons using a non-linear operator, and in this case, a sigmoid:</span>
+
+<span class="c1">#  \begin{equation}</span>
+<span class="c1">#      S(v)=\frac{2e_0}{1+e^{r(V_0-v)}}</span>
+<span class="c1">#  \end{equation}</span>
+
+<span class="c1"># with $e_{0}$ representing the maximum firing rate, $r$ denoting the variance of firing thresholds, and $V_{0}$ corresponding to the mean firing threshold.</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># It is the combination of those two steps that allows the representation of the coarse grained activity of each population in the model. This results in a model with a set of non-linear second-order differential equations that can be re-expressed as sets of first order non-linear ODEs:</span>
+
+<span class="c1"># \begin{eqnarray}</span>
+<span class="c1">#     \dot{y}_{0}(t) &amp;=&amp; y_{3}(t)\\</span>
+<span class="c1">#     \dot{y}_{3}(t) &amp;=&amp; AaS[y_{1}(t)-y_{2}(t)] - 2ay_{3}(t) - a^{2}y_{0}(t)\\</span>
+<span class="c1">#     \dot{y}_{1}(t) &amp;=&amp; y_{4}(t)\\</span>
+<span class="c1">#     \dot{y}_{4}(t) &amp;=&amp; Aa(p(t) + C_{2}S[C_{1}y_{0}(t)]) - 2ay_{4}(t) - a^{2}y_{1}(t)\\</span>
+<span class="c1">#     \dot{y}_{2}(t) &amp;=&amp; y_{5}(t)\\</span>
+<span class="c1">#     \dot{y}_{5}(t) &amp;=&amp; BbC_{4}S[C_{3}y_{0}] - 2by_{5}(t) - b^{2}y_{2}(t)</span>
+<span class="c1"># \end{eqnarray}</span>
+<span class="c1">#</span>
+
+<span class="c1"># with $p(t)$ representing the external input to the system, and $C_i$ to the connectivity parameters (See below for graphical representation).</span>
+<span class="c1">#</span>
+<span class="c1"># In summary, the Jansen-Rit model captures the dynamics of a local cortico-cortical circuit through a two-step process. It transforms the incoming pulse density into post-synaptic potentials using an impulse response, and then converts the impulse response into a set of differential equations to describe the neural activity of each population. This model provides insights into the complex interactions within the cortical circuitry and aids in understanding the neural dynamics observed in the brain. The output of the pyramidal postsynaptic potentials (y1-y2) is considered as the equivalent of an EEG signal.</span>
+
+<span class="c1"># In[33]:</span>
+
+
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="c1"># Path to the image file on Google Drive</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="s1">&#39;./data/JR_Model.png&#39;</span>
+
+<span class="n">image_array</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+
+
+<span class="c1"># Plot the image using Matplotlib</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>  <span class="c1"># Adjust the size as needed</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image_array</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>  <span class="c1"># Optional: Remove axes</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+
+<span class="c1"># First we are gonna see the JR implementation in numpy</span>
+
+<span class="c1"># \begin{equation}</span>
+<span class="c1"># Sigm(\nu) = \frac{2 \nu_{max}}{1 + \exp^{r(\nu_{0} - \nu)}}</span>
+<span class="c1"># \end{equation}</span>
+
+<span class="c1"># In[34]:</span>
+
+
+<span class="c1"># JR Sigmoid function</span>
+<span class="k">def</span> <span class="nf">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">v</span><span class="p">):</span>
+  <span class="n">action_potential</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">nu_max</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">v0</span><span class="o">-</span><span class="n">v</span><span class="p">)))</span>
+  <span class="k">return</span> <span class="n">action_potential</span>
+
+<span class="k">def</span> <span class="nf">imp_Jansen</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+  <span class="n">Exc</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">t</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+  <span class="n">Inh</span> <span class="o">=</span> <span class="n">B</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">t</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">Exc</span><span class="p">,</span> <span class="n">Inh</span>
+<span class="k">def</span> <span class="nf">exc_imp_Jansen</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
+  <span class="n">Exc</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">t</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">Exc</span>
+
+
+<span class="c1"># In[35]:</span>
+
+
+<span class="k">def</span> <span class="nf">plot_sigmoid</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+    <span class="n">v_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="n">action_potentials</span> <span class="o">=</span> <span class="p">[</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">v_values</span><span class="p">]</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">v_values</span><span class="p">,</span> <span class="n">action_potentials</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Action Potential&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Sigmoid Function&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Define the interactive plot</span>
+<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">plot_sigmoid</span><span class="p">,</span> <span class="n">nu_max</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">),</span> <span class="n">v0</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">),</span> <span class="n">r</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">))</span>
+
+<span class="c1"># Display the interactive plot</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">interactive_plot</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">output</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;350px&#39;</span>
+<span class="n">interactive_plot</span>
+
+
+<span class="c1"># In[36]:</span>
+
+
+<span class="k">def</span> <span class="nf">plot_exc_impulse_response</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="n">t_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+    <span class="n">Exc</span> <span class="o">=</span> <span class="p">[</span><span class="n">exc_imp_Jansen</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_values</span><span class="p">]</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_values</span><span class="p">,</span> <span class="n">Exc</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Excitatory Potential&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Impulse Response&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Define the interactive plot</span>
+<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">plot_exc_impulse_response</span><span class="p">,</span> <span class="n">A</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">),</span> <span class="n">a</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">))</span>
+
+<span class="c1"># Display the interactive plot</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">interactive_plot</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">output</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;350px&#39;</span>
+<span class="n">interactive_plot</span>
+
+
+<span class="c1"># ### Available parameters are:</span>
+<span class="c1">#</span>
+<span class="c1"># $A$ = Maximum amplitude of EPSP [mV]. Also called average synaptic gain.</span>
+<span class="c1">#</span>
+<span class="c1"># $B$ = Maximum amplitude of IPSP [mV]. Also called average synaptic gain.</span>
+<span class="c1">#</span>
+<span class="c1"># $a$ = Reciprocal of the time constant of passive membrane and all other spatially distributed delays in the dendritic network [ms^-1]. Also called average synaptic time constant.</span>
+<span class="c1">#</span>
+<span class="c1"># $b$ = Reciprocal of the time constant of passive membrane and all</span>
+<span class="c1"># other spatially distributed delays in the dendritic network [ms^-1].</span>
+<span class="c1"># Also called average synaptic time constant.</span>
+<span class="c1">#</span>
+<span class="c1"># $v_0$ = Firing threshold (PSP) for which a 50% firing rate is achieved.In other words, it is the value of the average membrane potential corresponding to the inflection point of the sigmoid [mV]. The usual value for this parameter is 6.0.</span>
+<span class="c1">#</span>
+<span class="c1"># $\nu_{max}$ = Determines the maximum firing rate of the neural population [s^-1].</span>
+<span class="c1">#</span>
+<span class="c1"># $r$ = Steepness of the sigmoidal transformation [mV^-1].</span>
+<span class="c1">#</span>
+<span class="c1"># $J$ = Average number of synapses between populations.</span>
+<span class="c1">#</span>
+<span class="c1"># $a_1$ = Average probability of synaptic contacts in the feedback excitatory loop.</span>
+<span class="c1">#</span>
+<span class="c1"># $a_2$ = Average probability of synaptic contacts in the slow feedback excitatory loop.</span>
+<span class="c1">#</span>
+<span class="c1"># $a_3$ = Average probability of synaptic contacts in the feedback inhibitory loop.</span>
+<span class="c1">#</span>
+<span class="c1"># $a_4$ = Average probability of synaptic contacts in the slow feedback inhibitory loop.</span>
+<span class="c1">#</span>
+<span class="c1"># $p_{min}$ = Minimum input firing rate.</span>
+<span class="c1">#</span>
+<span class="c1"># $p_{max}$ = Maximum input firing rate.</span>
+<span class="c1">#</span>
+<span class="c1"># $\mu$ = Mean input firing rate</span>
+
+<span class="c1"># In[37]:</span>
+
+
+<span class="c1"># Parameter settings</span>
+<span class="n">A</span> <span class="o">=</span> <span class="mf">3.25</span>
+<span class="n">B</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">135</span>
+<span class="n">C1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">C</span>
+<span class="n">C2</span> <span class="o">=</span> <span class="mf">0.8</span><span class="o">*</span><span class="n">C</span>
+<span class="n">C3</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">C</span>
+<span class="n">C4</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">C</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="mi">6</span>         <span class="c1"># mV</span>
+<span class="n">tau_e</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">tau_i</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">tau_e</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span> <span class="c1"># 100        # s^-1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">tau_i</span><span class="p">)</span><span class="o">*</span><span class="mi">1000</span> <span class="c1"># 50         # s^-1</span>
+<span class="n">nu_max</span> <span class="o">=</span> <span class="mf">2.5</span>   <span class="c1"># s^-1</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">0.56</span>       <span class="c1"># mV^-1</span>
+
+<span class="c1"># Simulation setting</span>
+<span class="n">start</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">stim_time</span> <span class="o">=</span><span class="mi">10</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">1e-4</span>
+<span class="n">time_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">stim_time</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+<span class="n">vec_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">time_array</span><span class="p">)</span>
+
+<span class="c1"># Input</span>
+<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span><span class="mi">320</span><span class="p">,</span><span class="n">vec_len</span><span class="p">)</span>
+<span class="c1"># Output Initialization</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">6</span><span class="p">,</span><span class="n">vec_len</span><span class="p">))</span>
+
+
+<span class="c1"># The equations of the Jansen-Rit model are the following:</span>
+<span class="c1"># \begin{equation}</span>
+<span class="c1"># \dot{y_{0}} = y_{3} \\</span>
+<span class="c1"># \dot{y_{3}} = Aa Sigm(y_{1} -  y_{2}) - 2a y_{3} - a^{2} y_{0} \\</span>
+<span class="c1"># \dot{y_{1}} = y_{4} \\</span>
+<span class="c1"># \dot{y_{4}} = Aa [p(t) + \alpha_2 J Sigm[\alpha_1 J y_0] + lrc + src] -2a y_{4} - a^{2} y_{1}\\</span>
+<span class="c1"># \dot{y_{2}} = y_{5} \\</span>
+<span class="c1"># \dot{y_5} = Bb (\alpha_4 J Sigm[\alpha_3 J y_{0}]) - 2b y_{5} - b^{2} y_{2} \\</span>
+<span class="c1"># \end{equation}</span>
+<span class="c1">#</span>
+
+<span class="c1"># In[38]:</span>
+
+
+<span class="c1"># Euler integration method to solve JR differential equations</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">vec_len</span><span class="p">):</span>
+  <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+  <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+  <span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+  <span class="n">y</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,(</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+  <span class="n">y</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="n">noise</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">C2</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,(</span><span class="n">C1</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]))))</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+  <span class="n">y</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="n">B</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="p">(</span><span class="n">C4</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,(</span><span class="n">C3</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span><span class="o">-</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">freqs_Jansen</span><span class="p">,</span><span class="n">ps_vPN_Jansen</span> <span class="o">=</span> <span class="n">welch</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">fs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">noverlap</span> <span class="o">=</span> <span class="mi">125</span><span class="p">,</span> <span class="n">nperseg</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+
+<span class="c1"># In[39]:</span>
+
+
+<span class="c1"># Figures</span>
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_array</span><span class="p">[</span><span class="mi">20000</span><span class="p">:</span><span class="mi">40000</span><span class="p">],</span><span class="n">output</span><span class="p">[</span><span class="mi">20000</span><span class="p">:</span><span class="mi">40000</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Output ($y_</span><span class="si">{1}</span><span class="s1">-y_</span><span class="si">{2}</span><span class="s1">$)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Power (A.U.)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freqs_Jansen</span><span class="p">,</span><span class="n">ps_vPN_Jansen</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># This can also be performed by tvb...</span>
+
+<span class="c1"># In[40]:</span>
+
+
+<span class="c1"># Run JR single node in TVB</span>
+
+<span class="n">n_step</span> <span class="o">=</span> <span class="mi">50000</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+<span class="c1"># Define initial conditions</span>
+<span class="n">initconds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span><span class="o">-</span><span class="mf">4.</span><span class="p">])[:,</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+
+<span class="c1"># fixed params for these examples : oscillatory</span>
+<span class="n">a</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">])</span><span class="c1">#[0.029])</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.22</span><span class="p">])</span><span class="c1">#0.1085])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.05</span><span class="p">])</span>
+<span class="c1"># Initialize model instance with fixed params</span>
+<span class="n">mod</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">JansenRit</span><span class="p">(</span><span class="n">v0</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">6.</span><span class="p">]),</span> <span class="n">mu</span><span class="o">=</span><span class="n">mu</span><span class="p">,</span> <span class="n">p_max</span><span class="o">=</span><span class="n">mu</span><span class="p">,</span> <span class="n">p_min</span><span class="o">=</span><span class="n">mu</span><span class="p">,</span>
+                       <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span><span class="n">a</span><span class="p">)</span>
+
+<span class="c1"># Execute single-node simulation run</span>
+<span class="n">time</span><span class="p">,</span><span class="n">dat</span> <span class="o">=</span> <span class="n">mod</span><span class="o">.</span><span class="n">stationary_trajectory</span><span class="p">(</span><span class="n">n_step</span><span class="o">=</span><span class="n">n_step</span><span class="p">,</span><span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+<span class="n">y_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">dat</span><span class="p">[:,</span><span class="mi">0</span><span class="p">,:,:])</span>
+<span class="n">y_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">dat</span><span class="p">[:,</span><span class="mi">1</span><span class="p">,:,:])</span>
+<span class="n">y_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">dat</span><span class="p">[:,</span><span class="mi">2</span><span class="p">,:,:])</span>
+
+
+<span class="n">freqs_Jansen_tvb</span><span class="p">,</span><span class="n">ps_vPN_Jansen_tvb</span> <span class="o">=</span> <span class="n">welch</span><span class="p">((</span><span class="n">y_1</span><span class="o">-</span><span class="n">y_2</span><span class="p">)[</span><span class="mi">1000</span><span class="p">:],</span><span class="n">fs</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">noverlap</span> <span class="o">=</span> <span class="mi">125</span><span class="p">,</span> <span class="n">nperseg</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+
+<span class="c1"># In[41]:</span>
+
+
+<span class="c1"># Figures</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">],(</span><span class="n">y_1</span><span class="o">-</span><span class="n">y_2</span><span class="p">)[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Output ($y_</span><span class="si">{1}</span><span class="s1">-y_</span><span class="si">{2}</span><span class="s1">$)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Power (A.U.)&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freqs_Jansen_tvb</span><span class="p">,</span><span class="n">ps_vPN_Jansen_tvb</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># In[42]:</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">welch</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">FloatSlider</span>
+
+<span class="c1"># Define the parameter range for bifurcation diagram</span>
+<span class="n">mu_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">simulate_and_plot</span><span class="p">(</span><span class="n">mu</span><span class="p">):</span>
+    <span class="c1"># Run JR single node in TVB</span>
+    <span class="n">n_step</span> <span class="o">=</span> <span class="mi">50000</span>
+    <span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+    <span class="c1"># Define initial conditions</span>
+    <span class="n">initconds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.</span><span class="p">])[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+
+    <span class="c1"># fixed params for these examples: oscillatory</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">])</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.05</span><span class="p">])</span>
+
+    <span class="c1"># Initialize model instance with variable mu</span>
+    <span class="n">mod</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">JansenRit</span><span class="p">(</span><span class="n">v0</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">6.</span><span class="p">]),</span> <span class="n">mu</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">mu</span><span class="p">]),</span> <span class="n">p_max</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">mu</span><span class="p">]),</span>
+                           <span class="n">p_min</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">mu</span><span class="p">]),</span> <span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="p">)</span>
+
+    <span class="c1"># Execute single-node simulation run</span>
+    <span class="n">time</span><span class="p">,</span> <span class="n">dat</span> <span class="o">=</span> <span class="n">mod</span><span class="o">.</span><span class="n">stationary_trajectory</span><span class="p">(</span><span class="n">n_step</span><span class="o">=</span><span class="n">n_step</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+    <span class="n">y_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">dat</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+    <span class="n">y_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">dat</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+    <span class="n">y_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">dat</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:])</span>
+
+    <span class="n">freqs_Jansen_tvb</span><span class="p">,</span> <span class="n">ps_vPN_Jansen_tvb</span> <span class="o">=</span> <span class="n">welch</span><span class="p">((</span><span class="n">y_1</span> <span class="o">-</span> <span class="n">y_2</span><span class="p">)[</span><span class="mi">1000</span><span class="p">:],</span> <span class="n">fs</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">noverlap</span><span class="o">=</span><span class="mi">125</span><span class="p">,</span> <span class="n">nperseg</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">],</span> <span class="p">(</span><span class="n">y_1</span> <span class="o">-</span> <span class="n">y_2</span><span class="p">)[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Output ($y_</span><span class="si">{1}</span><span class="s1">-y_</span><span class="si">{2}</span><span class="s1">$)&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Power (A.U.)&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freqs_Jansen_tvb</span><span class="p">,</span> <span class="n">ps_vPN_Jansen_tvb</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create an interactive slider for the parameter mu</span>
+<span class="n">mu_slider</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;mu&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define the interactive function</span>
+<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">simulate_and_plot</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="n">mu_slider</span><span class="p">)</span>
+
+<span class="c1"># Display the interactive plot</span>
+<span class="n">interactive_plot</span>
+
+
+<span class="c1"># In[43]:</span>
+
+
+<span class="n">df_JR</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">y_0</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">],</span><span class="n">y_1</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">],</span> <span class="n">y_2</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">]],</span>
+                     <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;y_0&#39;</span><span class="p">,</span> <span class="s1">&#39;y_1&#39;</span><span class="p">,</span> <span class="s1">&#39;y_2&#39;</span><span class="p">],</span>
+                     <span class="n">columns</span><span class="o">=</span><span class="n">time</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># ### Stability function</span>
+
+<span class="c1"># In[57]:</span>
+
+
+<span class="k">def</span> <span class="nf">differentiate_sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">vmax</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span>  <span class="n">r</span><span class="p">):</span>
+  <span class="n">ds_dx</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">vmax</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">v0</span><span class="o">-</span><span class="n">x</span><span class="p">))))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">v0</span><span class="o">-</span><span class="n">x</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+  <span class="k">return</span> <span class="n">ds_dx</span>
+
+
+<span class="c1"># In[58]:</span>
+
+
+<span class="k">def</span> <span class="nf">stability_func</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">a</span><span class="p">):</span>
+  <span class="n">A</span> <span class="o">=</span> <span class="n">A</span>
+  <span class="n">B</span> <span class="o">=</span> <span class="mi">22</span>
+  <span class="n">C</span> <span class="o">=</span> <span class="mi">135</span>
+  <span class="n">c1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">C</span>
+  <span class="n">c2</span> <span class="o">=</span> <span class="mf">0.8</span><span class="o">*</span><span class="n">C</span>  <span class="c1">#0.8</span>
+  <span class="n">c3</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">C</span>
+  <span class="n">c4</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">C</span>
+  <span class="n">v0</span> <span class="o">=</span> <span class="mi">6</span>         <span class="c1"># mV</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">a</span>        <span class="c1"># s^-1</span>
+  <span class="n">b</span> <span class="o">=</span> <span class="mi">50</span>         <span class="c1"># s^-1</span>
+  <span class="n">nu_max</span> <span class="o">=</span> <span class="mf">2.5</span>   <span class="c1"># s^-1</span>
+  <span class="n">r</span> <span class="o">=</span> <span class="mf">0.56</span>       <span class="c1"># mV^-1</span>
+  <span class="n">divA</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="o">/</span><span class="n">a</span><span class="p">)</span>
+  <span class="n">divB</span> <span class="o">=</span> <span class="p">(</span><span class="n">B</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
+  <span class="n">p_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+  <span class="c1">#C3_all = np.arange(0.1,0.6,0.001)</span>
+  <span class="c1">#c3 = C3_all*C</span>
+  <span class="c1">#C4_all = np.arange(0.1,0.6,0.001)</span>
+  <span class="c1">#c4 = C4_all*C</span>
+  <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">p_all</span><span class="p">))</span>
+
+  <span class="n">final_res</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">p_all</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mf">0.0001</span><span class="p">)</span>
+    <span class="n">y1</span> <span class="o">=</span> <span class="n">x</span>
+    <span class="n">y2</span> <span class="o">=</span> <span class="p">(</span><span class="n">divA</span><span class="o">*</span><span class="n">p</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">divA</span><span class="o">*</span><span class="n">c2</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">divA</span><span class="o">*</span><span class="n">c1</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">x</span><span class="p">)))</span> <span class="o">-</span> <span class="p">(</span><span class="n">divB</span><span class="o">*</span><span class="n">c4</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">divA</span><span class="o">*</span><span class="n">c3</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">x</span><span class="p">)))</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">y1</span> <span class="o">-</span> <span class="n">y2</span><span class="p">)))</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="n">final_res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+
+  <span class="n">new_values</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">final_res</span><span class="p">)):</span>
+    <span class="n">new_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y1</span><span class="p">[</span><span class="n">final_res</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span>
+
+  <span class="n">un</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">stability</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">new_values</span><span class="p">)):</span>
+      <span class="k">for</span> <span class="n">me</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">new_values</span><span class="p">[</span><span class="n">j</span><span class="p">])):</span>
+        <span class="n">J</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+        <span class="n">fix_point</span> <span class="o">=</span> <span class="n">new_values</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">me</span><span class="p">]</span>
+        <span class="n">first_coordinate</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="o">/</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">sigm</span><span class="p">(</span><span class="n">nu_max</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">fix_point</span><span class="p">)</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">differentiate_sigmoid</span><span class="p">(</span><span class="n">fix_point</span><span class="p">,</span><span class="n">vmax</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">differentiate_sigmoid</span><span class="p">(</span><span class="n">fix_point</span><span class="p">,</span><span class="n">vmax</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c2</span><span class="o">*</span><span class="n">c1</span><span class="p">)</span><span class="o">*</span><span class="n">differentiate_sigmoid</span><span class="p">(</span><span class="n">c1</span><span class="o">*</span><span class="n">first_coordinate</span><span class="p">,</span><span class="n">vmax</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span>
+        <span class="c1">#J[4, 3] = -2*a</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">B</span><span class="o">*</span><span class="n">c4</span><span class="o">*</span><span class="n">c3</span><span class="p">)</span><span class="o">*</span><span class="n">differentiate_sigmoid</span><span class="p">(</span><span class="n">c3</span><span class="o">*</span><span class="n">first_coordinate</span><span class="p">,</span><span class="n">vmax</span><span class="p">,</span><span class="n">v0</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">J</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span>
+        <span class="n">evals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">J</span><span class="p">)</span>
+        <span class="n">evals</span>
+        <span class="n">stability_per</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">evals</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">evals</span><span class="p">)):</span>
+          <span class="n">real_part</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">evals</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+          <span class="k">if</span> <span class="n">real_part</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">un</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">stability_per</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span><span class="n">un</span>
+          <span class="k">else</span><span class="p">:</span>
+            <span class="n">un</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">stability_per</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">un</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_values</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="n">stability_per</span><span class="o">.</span><span class="n">any</span><span class="p">()</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+          <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+          <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">stability</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">p_all</span><span class="p">,</span> <span class="n">new_values</span><span class="p">,</span> <span class="n">stability</span>
+
+
+<span class="c1"># In[59]:</span>
+
+
+<span class="c1"># def plot_stability(A, a):</span>
+<span class="c1">#     #p_values = np.arange(0, 0.2, 0.001)</span>
+<span class="c1">#     p_all, new_values, stability = stability_func(A,a)</span>
+<span class="c1">#     w = [[p_all[i]] * len(new_values[i]) for i in range(len(new_values))]</span>
+<span class="c1">#     index_unstable = np.where(np.array(stability)==1)</span>
+
+<span class="c1">#     x_to_plot = [item for sublist in w for item in sublist]</span>
+<span class="c1">#     y_to_plot = [item for sublist in new_values for item in sublist]</span>
+<span class="c1">#     x_array = np.array(x_to_plot)</span>
+<span class="c1">#     y_array = np.array(y_to_plot)</span>
+<span class="c1">#     x_array[index_unstable]</span>
+<span class="c1">#     plt.scatter(x_to_plot, y_to_plot)</span>
+<span class="c1">#     plt.scatter(x_array[index_unstable], y_array[index_unstable], marker = &quot;d&quot;)</span>
+<span class="c1">#     plt.show()</span>
+<span class="c1"># # Define the interactive plot</span>
+<span class="c1"># interactive_plot = interactive(plot_stability, A = (0, 10.0), a=(50, 150))</span>
+
+<span class="c1"># # Display the interactive plot</span>
+<span class="c1"># output = interactive_plot.children[-1]</span>
+<span class="c1"># output.layout.height = &#39;350px&#39;</span>
+<span class="c1"># interactive_plot</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># In[60]:</span>
+
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+
+<span class="c1"># Define the figure and axis objects</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate the limits for each dimension</span>
+<span class="n">zmax</span> <span class="o">=</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_2</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_2</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.5</span>
+<span class="n">zmin</span> <span class="o">=</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_2</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_2</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.5</span>
+<span class="n">ymax</span> <span class="o">=</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_1</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_1</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.5</span>
+<span class="n">ymin</span> <span class="o">=</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_1</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_1</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.5</span>
+<span class="n">xmax</span> <span class="o">=</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_0</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_0</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.5</span>
+<span class="n">xmin</span> <span class="o">=</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_0</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_0</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.5</span>
+
+<span class="c1"># Plot the trajectory as a line</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df_JR</span><span class="o">.</span><span class="n">y_0</span><span class="p">,</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_1</span><span class="p">,</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">y_2</span><span class="p">)</span>
+
+<span class="c1"># Set the limits for each dimension</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">(</span><span class="n">zmin</span><span class="p">,</span> <span class="n">zmax</span><span class="p">)</span>
+
+
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+
+
+<span class="c1"># In[62]:</span>
+
+
+<span class="c1"># fig, ax = plt.subplots(ncols=2, figsize=(12,3))</span>
+
+<span class="c1"># # V and W vs. time</span>
+<span class="c1"># df_VW.plot(ax=ax[0])</span>
+
+<span class="c1"># # V vs. W trajectory</span>
+<span class="c1"># ymax = df_VW.W.max() + df_VW.W.std()*1.5</span>
+<span class="c1"># ymin = df_VW.W.min() - df_VW.W.std()*1.5</span>
+<span class="c1"># xmax = df_VW.V.max() + df_VW.V.std()*1.5</span>
+<span class="c1"># xmin = df_VW.V.min() - df_VW.V.std()*1.5</span>
+<span class="c1"># df_VW.plot(x=&#39;V&#39;, y=&#39;W&#39;, legend=False,ax=ax[1],</span>
+<span class="c1">#            xlim=[xmin,xmax],ylim=[ymin,ymax],alpha=0.5);</span>
+
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># Bifurcation</span>
+
+<span class="c1"># In[63]:</span>
+
+
+<span class="c1"># df_JR = pd.DataFrame([y_0[1000:2000],y_1[1000:2000], y_2[1000:2000]],</span>
+<span class="c1">#                      index=[&#39;y_0&#39;, &#39;y_1&#39;, &#39;y_2&#39;],</span>
+<span class="c1">#                      columns=time[1000:2000]).T</span>
+
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot the 3D trajectory</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot3D</span><span class="p">(</span><span class="n">df_JR</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_0&#39;</span><span class="p">],</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_1&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y_0&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot3D</span><span class="p">(</span><span class="n">df_JR</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_0&#39;</span><span class="p">],</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_2&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y_1&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot3D</span><span class="p">(</span><span class="n">df_JR</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_1&#39;</span><span class="p">],</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_2&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y_2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set the plot limits and labels</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="n">df_JR</span><span class="o">.</span><span class="n">index</span> <span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">df_JR</span><span class="o">.</span><span class="n">index</span> <span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_0&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>  <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_0&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">([</span><span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">df_JR</span><span class="p">[</span><span class="s1">&#39;y_2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add a legend</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># ### Network model of whole-brain anatomical connectivity</span>
+
+<span class="c1"># In[64]:</span>
+
+
+<span class="c1"># TVB stuff</span>
+<span class="kn">from</span> <span class="nn">tvb.simulator.lab</span> <span class="kn">import</span> <span class="p">(</span><span class="n">models</span><span class="p">,</span><span class="n">connectivity</span><span class="p">,</span><span class="n">coupling</span><span class="p">,</span><span class="n">integrators</span><span class="p">,</span><span class="n">noise</span><span class="p">,</span><span class="n">simulator</span><span class="p">,</span>
+                              <span class="n">surfaces</span><span class="p">,</span><span class="n">region_mapping</span><span class="p">,</span><span class="n">monitors</span><span class="p">,</span><span class="n">equations</span><span class="p">,</span><span class="n">patterns</span><span class="p">,</span><span class="n">plot_pattern</span><span class="p">)</span>
+
+
+<span class="c1"># In[65]:</span>
+
+
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;mkdir rois&#39;</span><span class="p">)</span>
+<span class="n">parcel_dir</span> <span class="o">=</span> <span class="s1">&#39;./rois/&#39;</span>
+<span class="n">atlas_schaefer_2018</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">fetch_atlas_schaefer_2018</span><span class="p">(</span><span class="n">n_rois</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                                         <span class="n">yeo_networks</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+                                                         <span class="n">resolution_mm</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                                                         <span class="n">data_dir</span><span class="o">=</span><span class="n">parcel_dir</span><span class="p">)</span>
+
+
+<span class="c1"># In[66]:</span>
+
+
+<span class="c1">#Define where to slice the image</span>
+<span class="n">cut_coords</span> <span class="o">=</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="c1">#Show a colorbar</span>
+<span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span>
+<span class="c1">#Color scheme to show when viewing image</span>
+<span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Paired&#39;</span>
+
+<span class="c1">#Plot the parcellation schema referred to by atlas_schaefer_2018</span>
+<span class="n">nplot</span><span class="o">.</span><span class="n">plot_roi</span><span class="p">(</span><span class="n">atlas_schaefer_2018</span><span class="p">[</span><span class="s1">&#39;maps&#39;</span><span class="p">],</span> <span class="n">cut_coords</span><span class="o">=</span><span class="n">cut_coords</span><span class="p">,</span> <span class="n">colorbar</span><span class="o">=</span><span class="n">colorbar</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Schaefer et al. 2018&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># In[67]:</span>
+
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/ThomasYeoLab/CBIG/master/stable_projects/brain_parcellation/Schaefer2018_LocalGlobal/Parcellations/MNI/Centroid_coordinates/Schaefer2018_200Parcels_7Networks_order_FSLMNI152_2mm.Centroid_RAS.csv&#39;</span>
+<span class="n">atlas</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">atlas</span><span class="p">[</span><span class="s1">&#39;ROI Name&#39;</span><span class="p">]</span>
+
+<span class="n">label_stripped</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">xx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">)):</span>
+    <span class="n">label_stripped</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">xx</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;7Networks_&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
+
+
+<span class="n">coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">atlas</span><span class="p">[</span><span class="s1">&#39;R&#39;</span><span class="p">],</span> <span class="n">atlas</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">],</span> <span class="n">atlas</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">conduction_velocity</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1">#in ms</span>
+
+<span class="n">distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">coords</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">coords</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="k">for</span> <span class="n">roi1</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+  <span class="k">for</span> <span class="n">roi2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">coords</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">distance</span><span class="p">[</span><span class="n">roi1</span><span class="p">,</span> <span class="n">roi2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">coords</span><span class="p">[</span><span class="n">roi1</span><span class="p">,:]</span> <span class="o">-</span> <span class="n">coords</span><span class="p">[</span><span class="n">roi2</span><span class="p">,:])</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+    <span class="n">distance</span><span class="p">[</span><span class="n">roi1</span><span class="p">,</span> <span class="n">roi2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">coords</span><span class="p">[</span><span class="n">roi1</span><span class="p">,:]</span> <span class="o">-</span> <span class="n">coords</span><span class="p">[</span><span class="n">roi2</span><span class="p">,:])</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+
+
+
+
+<span class="c1"># **Structural Connectivity**</span>
+<span class="c1">#</span>
+<span class="c1"># The structural connectivity (SC) scales the long-range connections between distant brain regions. Mathematically, together with the global scaling factor G, it is a factor of the long-range input onto a region.</span>
+<span class="c1"># In the simplest case, without time edelays, local connectivity and noise:</span>
+<span class="c1"># \begin{equation}</span>
+<span class="c1"># \dot{x}_i = N(x_{i}(t)) + G\sum_1^n SC_{ij} x_j</span>
+<span class="c1"># \end{equation}</span>
+<span class="c1"># Wherein $\dot{x}_i$ is the derivative of the date variable, $N(x_{i}(t))$ is the nerual mass model function, $G$ is the global scaling factor, $SC_{ij}$ is the connections strength between regions $i$ and $j$ and $x_j$ is the output from region $j$.</span>
+
+<span class="c1"># In[70]:</span>
+
+
+<span class="k">def</span> <span class="nf">NormalizeData</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+         <span class="k">return</span> <span class="p">(</span><span class="n">data</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">data</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/GriffithsLab/PyTepFit/main/data/Schaefer2018_200Parcels_7Networks_count.csv&quot;</span>
+<span class="n">count</span> <span class="o">=</span> <span class="n">NormalizeData</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span>  <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)))</span>
+
+<span class="n">delays</span> <span class="o">=</span> <span class="n">distance</span><span class="o">/</span><span class="n">conduction_velocity</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;connectome matrices&#39;</span><span class="p">)</span>
+
+<span class="c1"># distance</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">delays</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Conduction Delays &#39;</span><span class="p">)</span>
+<span class="c1">#axes.flat[0].set_xticklabels(label_stripped, rotation=90);</span>
+<span class="c1"># axes.flat[0].set_yticklabels(label_stripped, rotation=0);</span>
+
+<span class="c1"># wieghts (normalized between 0 and 3)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">count</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Normalized count&#39;</span><span class="p">)</span>
+<span class="c1">#axes.flat[1].set_xticklabels(label_stripped, rotation=90)</span>
+<span class="c1"># axes.flat[1].set_yticklabels(label_stripped, rotation=0)</span>
+
+
+<span class="c1"># In[71]:</span>
+
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">connectivity</span><span class="o">.</span><span class="n">Connectivity</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="n">count</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">region_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">label_stripped</span><span class="p">)</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">delays</span> <span class="o">=</span> <span class="n">delays</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">centres</span> <span class="o">=</span> <span class="n">coords</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">tract_lengths</span> <span class="o">=</span> <span class="n">distance</span>
+
+
+<span class="n">Schaefer_parcel</span> <span class="o">=</span> <span class="n">nl</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load_img</span><span class="p">(</span><span class="n">atlas_schaefer_2018</span><span class="p">[</span><span class="s1">&#39;maps&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+
+
+<span class="n">areas</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">Schaefer_parcel</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">areas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">Schaefer_parcel</span><span class="o">==</span><span class="n">value</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">areas</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">areas</span><span class="p">)</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">areas</span> <span class="o">=</span> <span class="n">areas</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">number_of_connections</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">weights</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">cortical</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">broadcast_to</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">weights</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">orientations</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">conn</span><span class="o">.</span><span class="n">centres</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">configure</span><span class="p">()</span>
+
+
+<span class="c1"># In[72]:</span>
+
+
+<span class="k">def</span> <span class="nf">simulate_resting_state</span><span class="p">(</span><span class="n">simlength</span><span class="o">=</span><span class="mf">1000.</span><span class="p">,</span> <span class="n">tavg_per</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">conn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">jrm_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cpl_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">int_dt</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mf">3.</span><span class="p">):</span>
+    <span class="c1"># Define the connectivity</span>
+    <span class="k">if</span> <span class="n">conn</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">connectivity</span><span class="o">.</span><span class="n">Connectivity</span><span class="o">.</span><span class="n">from_file</span><span class="p">()</span>  <span class="c1"># Assuming you have a connectivity file or use load_default=True</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">speed</span><span class="p">])</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">configure</span><span class="p">()</span>
+
+    <span class="c1"># Define the model</span>
+    <span class="k">if</span> <span class="n">jrm_params</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">jrm_params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">v0</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">6.</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">jrm_params</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">v</span><span class="p">])</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">jrm_params</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">jrm</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">JansenRit</span><span class="p">(</span><span class="o">**</span><span class="n">jrm_params</span><span class="p">)</span>
+    <span class="n">jrm</span><span class="o">.</span><span class="n">variables_of_interest</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;y0&#39;</span><span class="p">,</span> <span class="s1">&#39;y1&#39;</span><span class="p">,</span> <span class="s1">&#39;y2&#39;</span><span class="p">,</span> <span class="s1">&#39;y3&#39;</span><span class="p">,</span> <span class="s1">&#39;y4&#39;</span><span class="p">,</span> <span class="s1">&#39;y5&#39;</span><span class="p">)</span>
+    <span class="n">jrm</span><span class="o">.</span><span class="n">stvar</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+
+    <span class="c1"># Set the noise</span>
+    <span class="k">if</span> <span class="n">sigma</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">phi_n_scaling</span> <span class="o">=</span> <span class="p">(</span><span class="n">jrm</span><span class="o">.</span><span class="n">a</span> <span class="o">*</span> <span class="n">jrm</span><span class="o">.</span><span class="n">A</span> <span class="o">*</span> <span class="p">(</span><span class="n">jrm</span><span class="o">.</span><span class="n">p_max</span> <span class="o">-</span> <span class="n">jrm</span><span class="o">.</span><span class="n">p_min</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">/</span> <span class="mf">2.</span>
+        <span class="n">sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+        <span class="n">sigma</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">phi_n_scaling</span> <span class="o">*</span> <span class="mf">1e-5</span>  <span class="c1"># Shrink noise by 1e-5</span>
+
+    <span class="c1"># Define the coupling</span>
+    <span class="k">if</span> <span class="n">cpl_params</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">cpl_params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">0.00045</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cpl_params</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">v</span><span class="p">])</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">cpl_params</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">cpl</span> <span class="o">=</span> <span class="n">coupling</span><span class="o">.</span><span class="n">SigmoidalJansenRit</span><span class="p">(</span><span class="o">**</span><span class="n">cpl_params</span><span class="p">)</span>
+
+    <span class="c1"># Set up the integration scheme</span>
+    <span class="n">solver</span> <span class="o">=</span> <span class="n">integrators</span><span class="o">.</span><span class="n">HeunStochastic</span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="n">int_dt</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="n">noise</span><span class="o">.</span><span class="n">Additive</span><span class="p">(</span><span class="n">nsig</span><span class="o">=</span><span class="n">sigma</span><span class="p">))</span>
+
+    <span class="c1"># Define initial conditions</span>
+    <span class="n">init_conds</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">conn</span><span class="o">.</span><span class="n">weights</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">])</span>  <span class="c1"># All zeros; doesn&#39;t matter as we are using stochastic integration</span>
+
+    <span class="c1"># Define the monitor for temporal averaging</span>
+    <span class="n">tavg_mon</span> <span class="o">=</span> <span class="n">monitors</span><span class="o">.</span><span class="n">TemporalAverage</span><span class="p">()</span>
+    <span class="n">tavg_mon</span><span class="o">.</span><span class="n">period</span> <span class="o">=</span> <span class="n">tavg_per</span>
+
+    <span class="c1"># Create the simulator object</span>
+    <span class="n">sim</span> <span class="o">=</span> <span class="n">simulator</span><span class="o">.</span><span class="n">Simulator</span><span class="p">(</span>
+        <span class="n">model</span><span class="o">=</span><span class="n">jrm</span><span class="p">,</span>
+        <span class="n">connectivity</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+        <span class="n">coupling</span><span class="o">=</span><span class="n">cpl</span><span class="p">,</span>
+        <span class="n">integrator</span><span class="o">=</span><span class="n">solver</span><span class="p">,</span>
+        <span class="n">initial_conditions</span><span class="o">=</span><span class="n">init_conds</span><span class="p">,</span>
+        <span class="n">simulation_length</span><span class="o">=</span><span class="n">simlength</span><span class="p">,</span>
+        <span class="n">monitors</span><span class="o">=</span><span class="p">(</span><span class="n">tavg_mon</span><span class="p">,),</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">configure</span><span class="p">()</span>
+
+    <span class="c1"># Run the simulation and obtain the temporal average data</span>
+    <span class="n">tavg_data</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+    <span class="c1"># Return the temporal average data</span>
+    <span class="k">return</span> <span class="n">tavg_data</span>
+
+
+<span class="c1"># In[73]:</span>
+
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">simulate_resting_state</span><span class="p">(</span><span class="n">simlength</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span> <span class="n">conn</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>  <span class="n">sigma</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">jrm_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                             <span class="n">cpl_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">int_dt</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">speed</span><span class="o">=</span><span class="mf">3.</span><span class="p">)</span>
+
+
+<span class="c1"># In[74]:</span>
+
+
+<span class="n">df_cPN</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][:,</span><span class="mi">0</span><span class="p">,:]),</span><span class="n">index</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_cPN</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">df_cPN</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span>
+<span class="n">df_cPN</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">label_stripped</span><span class="p">]</span>
+
+<span class="n">df_cEIN</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][:,</span><span class="mi">1</span><span class="p">,:]),</span><span class="n">index</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_cEIN</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">df_cEIN</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span>
+<span class="n">df_cEIN</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">label_stripped</span><span class="p">]</span>
+
+<span class="n">df_cIIN</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][:,</span><span class="mi">2</span><span class="p">,:]),</span><span class="n">index</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_cIIN</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">df_cIIN</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span>
+<span class="n">df_cIIN</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">label_stripped</span><span class="p">]</span>
+
+<span class="n">df_vPN</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][:,</span><span class="mi">3</span><span class="p">,:]),</span><span class="n">index</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_vPN</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">df_vPN</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span>
+<span class="n">df_vPN</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">label_stripped</span><span class="p">]</span>
+
+<span class="n">df_vEIN</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][:,</span><span class="mi">4</span><span class="p">,:]),</span><span class="n">index</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_vEIN</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">df_vEIN</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span>
+<span class="n">df_vEIN</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">label_stripped</span><span class="p">]</span>
+
+<span class="n">df_vIIN</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][:,</span><span class="mi">5</span><span class="p">,:]),</span><span class="n">index</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">df_vIIN</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<span class="n">df_vIIN</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span>
+<span class="n">df_vIIN</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">label_stripped</span><span class="p">]</span>
+
+
+<span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">df_cEIN</span> <span class="o">-</span> <span class="n">df_cIIN</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">2000</span><span class="p">])</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># **Leadfield**</span>
+<span class="c1">#</span>
+<span class="c1"># The leadfiled matrix is used to project local field potentials from region level (inside the brain) to the scalp surface for the calculation of EEG signals.</span>
+<span class="c1">#</span>
+<span class="c1"># $$M = GX + E$$</span>
+<span class="c1">#</span>
+<span class="c1"># where $M \in \mathbb{R}^{C \times T}$ is the sensor data, $G \in \mathbb{R}^{C \times S}$ is the lead-field (or gain) matrix, $X \in \mathbb{R}^{S \times T}$ is the source time course (stc) and $E \in \mathbb{R}^{C \times T}$ is additive Gaussian noise with zero mean and identity covariance</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># Here, we use pre-calculated matrix.</span>
+
+<span class="c1"># In[75]:</span>
+
+
+<span class="n">leadfield</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;./data/leadfield&#39;</span><span class="p">,</span> <span class="n">allow_pickle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">epoched</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">read_epochs</span><span class="p">(</span><span class="s1">&#39;./data/all_avg.mat_avg_high_epoched&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">trial</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epoched</span><span class="o">.</span><span class="n">_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+  <span class="n">epoched</span><span class="o">.</span><span class="n">_data</span><span class="p">[</span><span class="n">trial</span><span class="p">,:,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">leadfield</span> <span class="o">@</span> <span class="n">df</span><span class="p">[</span><span class="mi">2000</span><span class="p">:</span><span class="mi">4000</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+
+<span class="n">evoked</span> <span class="o">=</span> <span class="n">epoched</span><span class="o">.</span><span class="n">average</span><span class="p">()</span>
+
+
+<span class="c1"># In[76]:</span>
+
+
+<span class="n">_</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">spectrum</span> <span class="o">=</span> <span class="n">epoched</span><span class="o">.</span><span class="n">compute_psd</span><span class="p">(</span><span class="n">fmin</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">fmax</span><span class="o">=</span><span class="mf">40.0</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="c1"># average across epochs first</span>
+<span class="n">mean_spectrum</span> <span class="o">=</span> <span class="n">spectrum</span><span class="o">.</span><span class="n">average</span><span class="p">()</span>
+<span class="n">psds</span><span class="p">,</span> <span class="n">freqs</span> <span class="o">=</span> <span class="n">mean_spectrum</span><span class="o">.</span><span class="n">get_data</span><span class="p">(</span><span class="n">return_freqs</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># then convert to dB and take mean &amp; standard deviation across channels</span>
+<span class="n">psds</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">psds</span><span class="p">)</span>
+<span class="n">psds_mean</span> <span class="o">=</span> <span class="n">psds</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">psds_std</span> <span class="o">=</span> <span class="n">psds</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freqs</span><span class="p">,</span> <span class="n">psds_mean</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span>
+    <span class="n">freqs</span><span class="p">,</span>
+    <span class="n">psds_mean</span> <span class="o">-</span> <span class="n">psds_std</span><span class="p">,</span>
+    <span class="n">psds_mean</span> <span class="o">+</span> <span class="n">psds_std</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Multitaper PSD (eeg)&quot;</span><span class="p">,</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Frequency (Hz)&quot;</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Power Spectral Density (dB)&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="c1"># In[77]:</span>
+
+
+<span class="n">freqs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">35</span><span class="p">]),</span> <span class="n">num</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">n_cycles</span> <span class="o">=</span> <span class="n">freqs</span> <span class="o">/</span> <span class="mf">2.0</span>  <span class="c1"># different number of cycle per frequency</span>
+<span class="n">power</span><span class="p">,</span> <span class="n">itc</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">time_frequency</span><span class="o">.</span><span class="n">tfr_morlet</span><span class="p">(</span>
+    <span class="n">epoched</span><span class="p">,</span>
+    <span class="n">freqs</span><span class="o">=</span><span class="n">freqs</span><span class="p">,</span>
+    <span class="n">n_cycles</span><span class="o">=</span><span class="n">n_cycles</span><span class="p">,</span>
+    <span class="n">use_fft</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">return_itc</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">decim</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">n_jobs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="n">power</span><span class="o">.</span><span class="n">plot_topo</span><span class="p">(</span><span class="n">baseline</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;logratio&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Average power&quot;</span><span class="p">)</span>
+<span class="n">power</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">epoched</span><span class="o">.</span><span class="n">ch_names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;O1&#39;</span><span class="p">)],</span>
+           <span class="n">baseline</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;logratio&quot;</span><span class="p">,</span>
+           <span class="n">title</span><span class="o">=</span><span class="n">power</span><span class="o">.</span><span class="n">ch_names</span><span class="p">[</span><span class="n">epoched</span><span class="o">.</span><span class="n">ch_names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;O1&#39;</span><span class="p">)])</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">topomap_kw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+    <span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">tmin</span><span class="o">=</span><span class="n">epoched</span><span class="o">.</span><span class="n">times</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tmax</span><span class="o">=</span><span class="n">epoched</span><span class="o">.</span><span class="n">times</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">baseline</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;logratio&quot;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">plot_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Alpha</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fmin</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">fmax</span><span class="o">=</span><span class="mi">12</span><span class="p">),</span> <span class="n">Beta</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fmin</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">fmax</span><span class="o">=</span><span class="mi">25</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">fmin_fmax</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">plot_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+    <span class="n">power</span><span class="o">.</span><span class="n">plot_topomap</span><span class="p">(</span><span class="o">**</span><span class="n">fmin_fmax</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="o">**</span><span class="n">topomap_kw</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># ### Here we will add an external perturbation to show how we can simulated evoked activity</span>
+
+<span class="c1"># In[78]:</span>
+
+
+<span class="k">def</span> <span class="nf">run_sim</span><span class="p">(</span><span class="n">g2do_params</span><span class="p">,</span><span class="n">conn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">sim_len</span> <span class="o">=</span> <span class="mf">2e3</span><span class="p">,</span><span class="n">dt</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+            <span class="n">tau</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span><span class="n">lca</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
+            <span class="n">tavg_per</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+            <span class="n">stim_eqn_onset</span> <span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">stim_eqn_T</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">stim_eqn_tau</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">stim_weight</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">leadfield</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">conn</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">connectivity</span><span class="o">.</span><span class="n">Connectivity</span><span class="p">(</span><span class="n">load_default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Generic2dOscillator</span><span class="p">(</span><span class="o">**</span><span class="n">g2do_params</span><span class="p">)</span>
+    <span class="n">cpl</span><span class="o">=</span><span class="n">coupling</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">lca</span><span class="p">))</span>
+    <span class="n">solver</span><span class="o">=</span><span class="n">integrators</span><span class="o">.</span><span class="n">HeunDeterministic</span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">mons</span><span class="o">=</span><span class="p">(</span><span class="n">monitors</span><span class="o">.</span><span class="n">TemporalAverage</span><span class="p">(</span><span class="n">period</span><span class="o">=</span><span class="n">tavg_per</span><span class="p">),)</span>
+
+    <span class="n">eqn_t</span> <span class="o">=</span> <span class="n">equations</span><span class="o">.</span><span class="n">PulseTrain</span><span class="p">()</span>
+    <span class="n">eqn_t</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;onset&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stim_eqn_onset</span>
+    <span class="n">eqn_t</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stim_eqn_T</span>
+    <span class="n">eqn_t</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;tau&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">stim_eqn_tau</span>
+
+    <span class="n">weighting</span> <span class="o">=</span> <span class="n">stim_weight</span>
+
+    <span class="n">stimulus</span> <span class="o">=</span> <span class="n">patterns</span><span class="o">.</span><span class="n">StimuliRegion</span><span class="p">(</span><span class="n">temporal</span><span class="o">=</span><span class="n">eqn_t</span><span class="p">,</span>
+                                    <span class="n">connectivity</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+                                    <span class="n">weight</span><span class="o">=</span><span class="n">weighting</span><span class="p">)</span>
+    <span class="n">stimulus</span><span class="o">.</span><span class="n">configure_space</span><span class="p">()</span>
+    <span class="n">stimulus</span><span class="o">.</span><span class="n">configure_time</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">3e3</span><span class="p">,</span> <span class="mi">2</span><span class="o">**-</span><span class="mi">4</span><span class="p">))</span>
+
+    <span class="n">sim</span> <span class="o">=</span> <span class="n">simulator</span><span class="o">.</span><span class="n">Simulator</span><span class="p">(</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span><span class="p">,</span><span class="n">connectivity</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span><span class="n">coupling</span><span class="o">=</span><span class="n">cpl</span><span class="p">,</span>
+                            <span class="n">integrator</span><span class="o">=</span><span class="n">solver</span><span class="p">,</span>
+                            <span class="n">monitors</span><span class="o">=</span><span class="n">mons</span><span class="p">,</span>
+                            <span class="n">stimulus</span><span class="o">=</span><span class="n">stimulus</span><span class="p">)</span>
+    <span class="n">sim</span><span class="o">.</span><span class="n">configure</span><span class="p">()</span>
+
+    <span class="p">(</span><span class="n">tavg_time</span><span class="p">,</span> <span class="n">tavg_data</span><span class="p">),</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">simulation_length</span><span class="o">=</span><span class="n">sim_len</span><span class="p">)</span>
+
+
+    <span class="n">df_tavg</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">tavg_data</span><span class="p">),</span><span class="n">index</span><span class="o">=</span><span class="n">tavg_time</span><span class="p">)</span>
+    <span class="n">df_tavg</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+    <span class="n">df_tavg</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;node&#39;</span><span class="p">]</span>
+    <span class="n">df_tavg</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">region_labels</span>
+
+    <span class="n">EEG</span> <span class="o">=</span> <span class="n">leadfield</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_tavg</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="c1"># EEG shape [n_samples x n_eeg_channels]</span>
+
+    <span class="c1"># reference is mean signal, tranposing because trailing dimension of arrays must agree</span>
+    <span class="n">EEG</span> <span class="o">=</span> <span class="p">(</span><span class="n">EEG</span><span class="o">.</span><span class="n">T</span> <span class="o">-</span> <span class="n">EEG</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+
+    <span class="c1"># analyze signal, get baseline and frequency</span>
+    <span class="n">eeg_baseline</span> <span class="o">=</span> <span class="n">EEG</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">EEG</span> <span class="o">=</span> <span class="n">EEG</span> <span class="o">-</span> <span class="n">EEG</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># center EEG</span>
+
+    <span class="n">plot_pattern</span><span class="p">(</span><span class="n">stimulus</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df_tavg</span><span class="p">,</span> <span class="n">EEG</span>
+
+
+<span class="c1"># In[79]:</span>
+
+
+<span class="n">gamma_sp</span> <span class="o">=</span> <span class="mf">1.21</span>
+<span class="n">epsilon_sp</span> <span class="o">=</span>  <span class="mf">12.3083</span>
+
+<span class="c1"># is this the correct?</span>
+<span class="c1"># - units in Spiegler are S^-1.</span>
+<span class="c1"># - default value for g2do d is 0.02</span>
+<span class="c1"># - so this gives 0.07674</span>
+<span class="n">eta_sp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="mi">1</span><span class="o">/</span><span class="mf">1000.</span><span class="p">)</span> <span class="o">*</span> <span class="mf">76.74</span><span class="p">])</span>   <span class="c1">#eta_sp = 76.74 # 1. # 76.74 ##1. # 76.74 # 1.</span>
+
+<span class="c1">#eta_sp = np.array([0.2])</span>
+
+<span class="n">sp_g2do_params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">d</span> <span class="o">=</span> <span class="n">eta_sp</span><span class="p">,</span>
+                      <span class="n">tau</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span>
+                      <span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span>
+                      <span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">3.0</span><span class="p">),</span>
+                      <span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="o">-</span><span class="n">gamma_sp</span><span class="p">),</span>
+                      <span class="n">alpha</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">2.</span><span class="p">),</span>
+                      <span class="n">gamma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span>
+                      <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span>
+                      <span class="n">b</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="o">-</span><span class="n">epsilon_sp</span><span class="p">),</span> <span class="c1"># should not be negative? LOOKS LIKE IT AL COMES DOWN TO THIS PARAM</span>
+                      <span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">1.0</span><span class="p">),</span>
+                      <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mf">0.</span><span class="p">))</span>
+
+
+<span class="c1"># In[80]:</span>
+
+
+<span class="n">SomMot</span> <span class="o">=</span> <span class="p">[</span><span class="n">index</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">region_labels</span><span class="p">))</span> <span class="k">if</span> <span class="s1">&#39;SomMot&#39;</span> <span class="ow">in</span> <span class="n">word</span><span class="p">]</span>
+
+<span class="n">stim_weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">conn</span><span class="o">.</span><span class="n">region_labels</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">stim_weights</span><span class="p">[</span><span class="n">SomMot</span><span class="p">[:</span><span class="mi">16</span><span class="p">]]</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="c1">#inject stimulus to left hemi</span>
+
+
+<span class="c1"># In[81]:</span>
+
+
+<span class="n">node2use</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">stim_weights</span><span class="o">!=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">stim_weighting</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">region_labels</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1">#stim_weighting[node2use] = 0.1</span>
+
+<span class="c1"># configure stimulus spatial pattern</span>
+<span class="n">stim_weight</span> <span class="o">=</span> <span class="n">stim_weights</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">stim_weights</span><span class="o">!=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">stim_weighting</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">stim_weights</span><span class="o">!=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">stim_weight</span>
+
+
+
+<span class="n">df_tavg_sp1</span><span class="p">,</span> <span class="n">EEG</span> <span class="o">=</span> <span class="n">run_sim</span><span class="p">(</span><span class="n">sp_g2do_params</span><span class="p">,</span><span class="n">conn</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span> <span class="n">lca</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">sim_len</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span> \
+                      <span class="n">stim_eqn_onset</span> <span class="o">=</span><span class="mi">1250</span><span class="p">,</span> <span class="n">stim_eqn_T</span> <span class="o">=</span> <span class="mf">1500.0</span><span class="p">,</span>
+                      <span class="n">stim_eqn_tau</span> <span class="o">=</span> <span class="mf">50.0</span><span class="p">,</span> \
+                      <span class="n">stim_weight</span><span class="o">=</span><span class="n">stim_weighting</span><span class="p">,</span> <span class="n">leadfield</span><span class="o">=</span><span class="n">leadfield</span><span class="p">)</span>
+
+
+<span class="c1"># In[82]:</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_tavg_sp1</span><span class="p">))</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_tavg_sp1</span><span class="p">)[</span><span class="mi">1000</span><span class="p">:</span><span class="mi">1500</span><span class="p">])</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">])</span>
+
+
+<span class="c1"># In[83]:</span>
+
+
+<span class="n">epoched</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">read_epochs</span><span class="p">(</span><span class="s1">&#39;./data/all_avg.mat_avg_high_epoched&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">trial</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epoched</span><span class="o">.</span><span class="n">_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+  <span class="n">epoched</span><span class="o">.</span><span class="n">_data</span><span class="p">[</span><span class="n">trial</span><span class="p">,:,:]</span> <span class="o">=</span> <span class="n">EEG</span><span class="p">[</span><span class="mi">250</span><span class="p">:</span><span class="mi">2250</span><span class="p">,:]</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">evoked</span> <span class="o">=</span> <span class="n">epoched</span><span class="o">.</span><span class="n">average</span><span class="p">()</span>
+
+
+<span class="c1"># In[84]:</span>
+
+
+<span class="n">ts_args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">0.025</span><span class="p">,</span><span class="mf">0.1</span><span class="p">])</span>
+<span class="n">ch</span><span class="p">,</span> <span class="n">peak_locs1</span> <span class="o">=</span> <span class="n">evoked</span><span class="o">.</span><span class="n">get_peak</span><span class="p">(</span><span class="n">ch_type</span><span class="o">=</span><span class="s1">&#39;eeg&#39;</span><span class="p">,</span> <span class="n">tmin</span><span class="o">=-</span><span class="mf">0.005</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mf">0.004</span><span class="p">)</span>
+<span class="n">ch</span><span class="p">,</span> <span class="n">peak_locs2</span> <span class="o">=</span> <span class="n">evoked</span><span class="o">.</span><span class="n">get_peak</span><span class="p">(</span><span class="n">ch_type</span><span class="o">=</span><span class="s1">&#39;eeg&#39;</span><span class="p">,</span> <span class="n">tmin</span><span class="o">=</span><span class="mf">0.008</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">ch</span><span class="p">,</span> <span class="n">peak_locs3</span> <span class="o">=</span> <span class="n">evoked</span><span class="o">.</span><span class="n">get_peak</span><span class="p">(</span><span class="n">ch_type</span><span class="o">=</span><span class="s1">&#39;eeg&#39;</span><span class="p">,</span> <span class="n">tmin</span><span class="o">=</span><span class="mf">0.030</span><span class="p">,</span> <span class="n">tmax</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">times</span> <span class="o">=</span> <span class="p">[</span><span class="n">peak_locs1</span><span class="p">,</span> <span class="n">peak_locs2</span><span class="p">,</span> <span class="n">peak_locs3</span><span class="p">]</span>
+
+<span class="n">evoked</span><span class="o">.</span><span class="n">plot_joint</span><span class="p">(</span><span class="n">ts_args</span><span class="o">=</span><span class="n">ts_args</span><span class="p">,</span> <span class="n">times</span><span class="o">=</span><span class="n">times</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Propagation pattern&#39;</span><span class="p">);</span>
+
+
+<span class="c1"># ### Conclusions</span>
+
+<span class="c1">#</span>
+
+<span class="c1"># ### References</span>
+
+<span class="c1">#</span>
+<span class="c1"># &gt; Jansen, B.H. and Rit, V.G. (1995) **Electroencephalogram and visual evoked potential generation in a mathematical model of coupled cortical columns.** *Biological cybernetics*, 73(4), pp.357-366.</span>
+<span class="c1">#</span>
+<span class="c1"># &gt; Da Silva, F.L., Hoeks, A., Smits, H. and Zetterberg, L.H. (1974). **Model of brain rhythmic activity.** *Kybernetik*, 15(1), pp.27-37.</span>
+<span class="c1">#</span>
+<span class="c1"># &gt; David, O. and Friston, K.J. (2003) **A neural mass model for MEG/EEG: coupling and neuronal dynamics.** *NeuroImage*, 20(3), pp.1743-1755.</span>
+<span class="c1">#</span>
+<span class="c1"># &gt; Spiegler, A., Knösche, T.R., Schwab, K., Haueisen, J. and Atay, F.M. (2011). **Modeling brain resonance phenomena using a neural mass model.** *PLoS Comput Biol*, 7(12), p.e1002298.</span>
+<span class="c1">#</span>
+<span class="c1"># &gt; Momi, D., Wang, Z., Griffiths, J.D. (2023). **TMS-Evoked Responses Are Driven by Recurrent Large-Scale Network Dynamics</span>
+<span class="c1"># .** *eLife*, 111, pp.385-430.</span>
+<span class="c1">#</span>
+
+<span class="c1"># #### For any question feel free to reach out:</span>
+
+<span class="c1"># ***Dr. Davide Momi***&lt;br/&gt;</span>
+<span class="c1"># ------------&lt;br/&gt;</span>
+<span class="c1"># Post-Doctoral Research Fellow&lt;br/&gt;</span>
+<span class="c1"># Whole Brain Modelling Group&lt;br/&gt;</span>
+<span class="c1"># Krembil Centre for Neuroinformatics - CAMH&lt;br/&gt;</span>
+<span class="c1"># 250 College St., Toronto, ON M5T 1R8&lt;br/&gt;</span>
+<span class="c1"># &lt;br/&gt;</span>
+<span class="c1"># website: https://davi1990.github.io/&lt;br/&gt;</span>
+<span class="c1"># Twitter: @DaveMomi&lt;br/&gt;</span>
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+
+<span class="c1"># In[ ]:</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-background-theory-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/5ab66f9e0f56a11aa7a596ea3ab25bfb/01_Background_Theory.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">01_Background_Theory.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/5b9d44c8d7df53f6ba89acd19acce3c8/01_Background_Theory.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">01_Background_Theory.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2023, Davide Momi, Joana Cabral, John Griffiths
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
