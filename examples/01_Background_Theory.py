@@ -1,17 +1,32 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+
+r"""
+=================================
+1 Background Theory
+=================================
+
+What is being modeled:
+
+- Created a Sphere'd Cube (chosen points on cube projected onto radius = 1 sphere), so that regions were more evently distributed. All corners of cube chosen as regions, thus there are 8 regions.
+
+- EEG channels located on the center of each face of the cube. Thus there are 6 EEG channels.
+
+- Added some randomness to initial values - to decorrelate the signals a bit. Looking for FC matrix to look similar to SC matrix.
+
+"""
 # ## 1) Background / Theory
-# 
-# 08:00-08:50 ~~ MORNING COFFEE & GREETS 
-# 
+#
+# 08:00-08:50 ~~ MORNING COFFEE & GREETS
+#
 # 08:50-09:00 - Intro to the workshop [Davide Momi](https://scholar.google.com/citations?user=I-BACCgAAAAJ&hl=en&oi=ao)/[John Griffiths](https://scholar.google.com/citations?user=xwkt6aQAAAAJ&hl=en&oi=ao)<br>
 # 09:00-09:45 - Intro to dynamics [Viktor Jirsa](https://scholar.google.com/citations?user=0ZVdLpMAAAAJ&hl=en) <br>
 # 09:45-10:30 - Intro to connectivity [Joana Cabral](https://scholar.google.com/citations?user=v3ZEOeMAAAAJ&hl=en&oi=ao) <br>
 # 10:30-11:15 - Intro to connectome-based neural mass modeling [Sorenza Bastiaens](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Sorenza+Bastiaens&btnG=) <br>
 # 11:15-12:15 - Hands-on Session 1 [Davide Momi](https://scholar.google.com/citations?user=I-BACCgAAAAJ&hl=en&oi=ao)/[John Griffiths](https://scholar.google.com/citations?user=xwkt6aQAAAAJ&hl=en&oi=ao)<br>
-# 
-# 12:15-13:00 ~~ LUNCH 
+#
+# 12:15-13:00 ~~ LUNCH
 
 # In[27]:
 
@@ -64,39 +79,39 @@ plt.show()
 
 
 # -----
-# 
+#
 # ## Contents
-# 
+#
 
-# [Overview](#overview)  
-# [Setup](#setup)  
-# [Neural mass model of local neural dynamics](#neural-mass-model-of-local-neural-dynamics)  
-# [Network model of whole-brain anatomical connectivity](#network-model-of-whole-brain-anatomical-connectivity)  
-# [Conclusions](#conclusions)  
+# [Overview](#overview)
+# [Setup](#setup)
+# [Neural mass model of local neural dynamics](#neural-mass-model-of-local-neural-dynamics)
+# [Network model of whole-brain anatomical connectivity](#network-model-of-whole-brain-anatomical-connectivity)
+# [Conclusions](#conclusions)
 # [References](#references)
 
 # ### Overview
 
 # This is the Hands-on Session #1 of the OHBM's Educational Course entitled "Whole-brain, Connectome-based Models of Brain Dynamics: From Principles to Applications"
-# 
+#
 # In this tutorial we will cover some of the key components involved in computational modelling of mesoscopic, whole-brain network dynamics.
-# 
-# The paradigm we use for mathematically and computationally describing brain organization is called <b>connectome-based neural mass modelling</b>. 
-# Within this framework, the two main components of setting up a whole brain model are 
-# 
-# 1) **node-level dynamics** and   
-# 2) the large-scale **network topology**.  
-# 
-# We will examine each of these in term, for an exemplary neural mass model and brain network connectivity. 
-# 
-# This focus is on **resting** or 'steady-state' (as opposed to task- or stimulus-evoked) neural activity, at the relatively **fast timescales** measured by EEG, MEG, ECoG, LFP, etc. (as opposed to slower timescale signals seen in functional MRI). 
-# 
-# Demonstrations are done using a combination of pure-python code and simulations run using the [**The Virtual Brain Toolbox**](https://thevirtualbrain.org/tvb/zwei) who has the purpose of offering modern tools to the Neurosciences community, for computing, simulating and analyzing functional and structural data of human brains, brains modeled at the level of population of neurons. 
-# 
+#
+# The paradigm we use for mathematically and computationally describing brain organization is called <b>connectome-based neural mass modelling</b>.
+# Within this framework, the two main components of setting up a whole brain model are
+#
+# 1) **node-level dynamics** and
+# 2) the large-scale **network topology**.
+#
+# We will examine each of these in term, for an exemplary neural mass model and brain network connectivity.
+#
+# This focus is on **resting** or 'steady-state' (as opposed to task- or stimulus-evoked) neural activity, at the relatively **fast timescales** measured by EEG, MEG, ECoG, LFP, etc. (as opposed to slower timescale signals seen in functional MRI).
+#
+# Demonstrations are done using a combination of pure-python code and simulations run using the [**The Virtual Brain Toolbox**](https://thevirtualbrain.org/tvb/zwei) who has the purpose of offering modern tools to the Neurosciences community, for computing, simulating and analyzing functional and structural data of human brains, brains modeled at the level of population of neurons.
+#
 
 # ### Setup
 
-# If you are running this notebook in Google Colab, you will need to install some packages. If you are running in a more standard python environment, you need to ensure that these packages are installed externally (typically with `pip install <package>` on the command line).  
+# If you are running this notebook in Google Colab, you will need to install some packages. If you are running in a more standard python environment, you need to ensure that these packages are installed externally (typically with `pip install <package>` on the command line).
 
 # In[28]:
 
@@ -145,20 +160,20 @@ from ipywidgets import interact, FloatSlider, interactive_output, HBox, VBox
 # ### Neural mass model of local neural dynamics
 
 # [*Jansen-Rit (1995)*](https://link.springer.com/article/10.1007/BF00199471) is a neural mass model that represents the macroscopic electrophysiological activity within a cortical column. This circuit consists of three interconnected neural populations: one for the pyramidal projection neuron and two for excitatory and inhibitory interneurons, forming two feedback loops.
-# 
+#
 # In the model, each neural population is described with two operators: a rate-to-potential operator describing the dynamics between synapses and dendritic trees, and a potential-to-rate operator representing the output firing rate produced at the soma. The model is thus structured in two steps to describe the populations and capture the dynamics of the circuit.
-# 
+#
 # The first step of the model involves transforming the average pulse density of action potentials received by the population into the average post-synaptic membrane potential. This step is known as the post-synaptic potential block and involves a linear transformation using an impulse response. The impulse response describes the dynamics between the synapses and dendritic trees:
-# 
+#
 
 #  \begin{equation}
-#    h(t)=\alpha \beta te^{-\beta t}    \qquad \text{for t} > 0, 
+#    h(t)=\alpha \beta te^{-\beta t}    \qquad \text{for t} > 0,
 #  \end{equation}
 
 # The variable $\alpha$ is defined as the maximum amplitude of the postsynaptic potential and $\beta$ represent a sum of the reciprocal of the time constant of the passive membrane and all other spatially distributed delays present in the dendritic network, condensed into a single lumped term. For the excitatory  populations $\alpha$, $\beta$ correspond to $A, a$ respectively, and for the inhibitory population $\alpha$, $\beta$ are $B, b$.
-# 
-#  By convolving the incoming pulse with the impulse response, we can determine the relationship between the pulse rate and the corresponding membrane potential, and express it in the form of a second-order differential equation. 
-# 
+#
+#  By convolving the incoming pulse with the impulse response, we can determine the relationship between the pulse rate and the corresponding membrane potential, and express it in the form of a second-order differential equation.
+#
 # The second step transforms the average membrane potential of the population into the average rate of action potentials fired by the neurons using a non-linear operator, and in this case, a sigmoid:
 
 #  \begin{equation}
@@ -166,8 +181,8 @@ from ipywidgets import interact, FloatSlider, interactive_output, HBox, VBox
 #  \end{equation}
 
 # with $e_{0}$ representing the maximum firing rate, $r$ denoting the variance of firing thresholds, and $V_{0}$ corresponding to the mean firing threshold.
-# 
-# 
+#
+#
 # It is the combination of those two steps that allows the representation of the coarse grained activity of each population in the model. This results in a model with a set of non-linear second-order differential equations that can be re-expressed as sets of first order non-linear ODEs:
 
 # \begin{eqnarray}
@@ -178,11 +193,11 @@ from ipywidgets import interact, FloatSlider, interactive_output, HBox, VBox
 #     \dot{y}_{2}(t) &=& y_{5}(t)\\
 #     \dot{y}_{5}(t) &=& BbC_{4}S[C_{3}y_{0}] - 2by_{5}(t) - b^{2}y_{2}(t)
 # \end{eqnarray}
-# 
+#
 
 # with $p(t)$ representing the external input to the system, and $C_i$ to the connectivity parameters (See below for graphical representation).
-# 
-# In summary, the Jansen-Rit model captures the dynamics of a local cortico-cortical circuit through a two-step process. It transforms the incoming pulse density into post-synaptic potentials using an impulse response, and then converts the impulse response into a set of differential equations to describe the neural activity of each population. This model provides insights into the complex interactions within the cortical circuitry and aids in understanding the neural dynamics observed in the brain. The output of the pyramidal postsynaptic potentials (y1-y2) is considered as the equivalent of an EEG signal. 
+#
+# In summary, the Jansen-Rit model captures the dynamics of a local cortico-cortical circuit through a two-step process. It transforms the incoming pulse density into post-synaptic potentials using an impulse response, and then converts the impulse response into a set of differential equations to describe the neural activity of each population. This model provides insights into the complex interactions within the cortical circuitry and aids in understanding the neural dynamics observed in the brain. The output of the pyramidal postsynaptic potentials (y1-y2) is considered as the equivalent of an EEG signal.
 
 # In[33]:
 
@@ -204,7 +219,7 @@ plt.show()
 
 
 
-# First we are gonna see the JR implementation in numpy 
+# First we are gonna see the JR implementation in numpy
 
 # \begin{equation}
 # Sigm(\nu) = \frac{2 \nu_{max}}{1 + \exp^{r(\nu_{0} - \nu)}}
@@ -274,49 +289,49 @@ interactive_plot
 
 
 # ### Available parameters are:
-# 
+#
 # $A$ = Maximum amplitude of EPSP [mV]. Also called average synaptic gain.
-# 
+#
 # $B$ = Maximum amplitude of IPSP [mV]. Also called average synaptic gain.
-# 
+#
 # $a$ = Reciprocal of the time constant of passive membrane and all other spatially distributed delays in the dendritic network [ms^-1]. Also called average synaptic time constant.
-# 
+#
 # $b$ = Reciprocal of the time constant of passive membrane and all
 # other spatially distributed delays in the dendritic network [ms^-1].
 # Also called average synaptic time constant.
-# 
+#
 # $v_0$ = Firing threshold (PSP) for which a 50% firing rate is achieved.In other words, it is the value of the average membrane potential corresponding to the inflection point of the sigmoid [mV]. The usual value for this parameter is 6.0.
-# 
+#
 # $\nu_{max}$ = Determines the maximum firing rate of the neural population [s^-1].
-# 
+#
 # $r$ = Steepness of the sigmoidal transformation [mV^-1].
-# 
+#
 # $J$ = Average number of synapses between populations.
-# 
+#
 # $a_1$ = Average probability of synaptic contacts in the feedback excitatory loop.
-# 
+#
 # $a_2$ = Average probability of synaptic contacts in the slow feedback excitatory loop.
-# 
+#
 # $a_3$ = Average probability of synaptic contacts in the feedback inhibitory loop.
-# 
+#
 # $a_4$ = Average probability of synaptic contacts in the slow feedback inhibitory loop.
-# 
+#
 # $p_{min}$ = Minimum input firing rate.
-# 
+#
 # $p_{max}$ = Maximum input firing rate.
-# 
+#
 # $\mu$ = Mean input firing rate
 
 # In[37]:
 
 
 # Parameter settings
-A = 3.25 
+A = 3.25
 B = 22
 C = 135
 C1 = 1*C
-C2 = 0.8*C  
-C3 = 0.25*C 
+C2 = 0.8*C
+C3 = 0.25*C
 C4 = 0.25*C
 v0 = 6         # mV
 tau_e = 10
@@ -348,7 +363,7 @@ y = np.zeros((6,vec_len))
 # \dot{y_{2}} = y_{5} \\
 # \dot{y_5} = Bb (\alpha_4 J Sigm[\alpha_3 J y_{0}]) - 2b y_{5} - b^{2} y_{2} \\
 # \end{equation}
-# 
+#
 
 # In[38]:
 
@@ -370,7 +385,7 @@ freqs_Jansen,ps_vPN_Jansen = welch(X,fs=100, noverlap = 125, nperseg=1000)
 # In[39]:
 
 
-# Figures 
+# Figures
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15,5))
 ax2.set_xscale("log")
 ax2.set_yscale("log")
@@ -400,7 +415,7 @@ a= np.array([0.1])#[0.029])
 mu = np.array([0.22])#0.1085])
 b = np.array([0.05])
 # Initialize model instance with fixed params
-mod = models.JansenRit(v0=np.array([6.]), mu=mu, p_max=mu, p_min=mu, 
+mod = models.JansenRit(v0=np.array([6.]), mu=mu, p_max=mu, p_min=mu,
                        b = b, a =a)
 
 # Execute single-node simulation run
@@ -416,7 +431,7 @@ freqs_Jansen_tvb,ps_vPN_Jansen_tvb = welch((y_1-y_2)[1000:],fs=1000, noverlap = 
 # In[41]:
 
 
-# Figures 
+# Figures
 
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15,5))
@@ -489,7 +504,7 @@ interactive_plot
 
 
 df_JR = pd.DataFrame([y_0[1000:2000],y_1[1000:2000], y_2[1000:2000]],
-                     index=['y_0', 'y_1', 'y_2'], 
+                     index=['y_0', 'y_1', 'y_2'],
                      columns=time[1000:2000]).T
 
 
@@ -545,7 +560,7 @@ def stability_func(A,a):
   new_values = []
   for i in range(0,len(final_res)):
     new_values.append(y1[final_res[i]])
-  
+
   un = 0
   stability = []
   for j in range(0,len(new_values)):
@@ -688,7 +703,7 @@ plt.show()
 
 
 # df_JR = pd.DataFrame([y_0[1000:2000],y_1[1000:2000], y_2[1000:2000]],
-#                      index=['y_0', 'y_1', 'y_2'], 
+#                      index=['y_0', 'y_1', 'y_2'],
 #                      columns=time[1000:2000]).T
 
 
@@ -748,9 +763,9 @@ from tvb.simulator.lab import (models,connectivity,coupling,integrators,noise,si
 
 get_ipython().system('mkdir rois')
 parcel_dir = './rois/'
-atlas_schaefer_2018 = datasets.fetch_atlas_schaefer_2018(n_rois=200, 
-                                                         yeo_networks=7, 
-                                                         resolution_mm=2, 
+atlas_schaefer_2018 = datasets.fetch_atlas_schaefer_2018(n_rois=200,
+                                                         yeo_networks=7,
+                                                         resolution_mm=2,
                                                          data_dir=parcel_dir)
 
 
@@ -795,20 +810,20 @@ for roi1 in range(coords.shape[0]):
 
 
 # **Structural Connectivity**
-# 
+#
 # The structural connectivity (SC) scales the long-range connections between distant brain regions. Mathematically, together with the global scaling factor G, it is a factor of the long-range input onto a region.
 # In the simplest case, without time edelays, local connectivity and noise:
 # \begin{equation}
 # \dot{x}_i = N(x_{i}(t)) + G\sum_1^n SC_{ij} x_j
 # \end{equation}
-# Wherein $\dot{x}_i$ is the derivative of the date variable, $N(x_{i}(t))$ is the nerual mass model function, $G$ is the global scaling factor, $SC_{ij}$ is the connections strength between regions $i$ and $j$ and $x_j$ is the output from region $j$. 
+# Wherein $\dot{x}_i$ is the derivative of the date variable, $N(x_{i}(t))$ is the nerual mass model function, $G$ is the global scaling factor, $SC_{ij}$ is the connections strength between regions $i$ and $j$ and $x_j$ is the output from region $j$.
 
 # In[70]:
 
 
 def NormalizeData(data):
          return (data - np.min(data)) / (np.max(data) - np.min(data))
-    
+
 
 url = "https://raw.githubusercontent.com/GriffithsLab/PyTepFit/main/data/Schaefer2018_200Parcels_7Networks_count.csv"
 count = NormalizeData(np.array(pd.read_csv(url,  header=None, sep=' ')))
@@ -848,7 +863,7 @@ Schaefer_parcel = nl.image.load_img(atlas_schaefer_2018['maps']).get_fdata().fla
 areas=[]
 for value in range(1,np.unique(Schaefer_parcel).shape[0]):
     areas.append(np.where(Schaefer_parcel==value)[0].shape[0])
-    
+
 areas= np.array(areas)
 conn.areas = areas
 conn.number_of_connections = np.count_nonzero(conn.weights)
@@ -922,7 +937,7 @@ def simulate_resting_state(simlength=1000., tavg_per=1, conn=None, sigma=None, j
 # In[73]:
 
 
-res = simulate_resting_state(simlength=5000, conn=conn,  sigma=None, jrm_params=None, 
+res = simulate_resting_state(simlength=5000, conn=conn,  sigma=None, jrm_params=None,
                              cpl_params=None, int_dt=0.5, speed=3.)
 
 
@@ -963,7 +978,7 @@ df_vIIN.columns = [label_stripped]
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-df = df_cEIN - df_cIIN 
+df = df_cEIN - df_cIIN
 
 df.index = np.round(df.index,1)
 
@@ -980,15 +995,15 @@ fig = ax[1].plot(df[1000:2000])
 
 
 # **Leadfield**
-# 
-# The leadfiled matrix is used to project local field potentials from region level (inside the brain) to the scalp surface for the calculation of EEG signals. 
-# 
+#
+# The leadfiled matrix is used to project local field potentials from region level (inside the brain) to the scalp surface for the calculation of EEG signals.
+#
 # $$M = GX + E$$
-# 
+#
 # where $M \in \mathbb{R}^{C \times T}$ is the sensor data, $G \in \mathbb{R}^{C \times S}$ is the lead-field (or gain) matrix, $X \in \mathbb{R}^{S \times T}$ is the source time course (stc) and $E \in \mathbb{R}^{C \times T}$ is additive Gaussian noise with zero mean and identity covariance
-# 
-# 
-# Here, we use pre-calculated matrix. 
+#
+#
+# Here, we use pre-calculated matrix.
 
 # In[75]:
 
@@ -1049,8 +1064,8 @@ power, itc = mne.time_frequency.tfr_morlet(
 
 
 power.plot_topo(baseline=(-0.5, 0), mode="logratio", title="Average power")
-power.plot([epoched.ch_names.index('O1')], 
-           baseline=None, mode="logratio", 
+power.plot([epoched.ch_names.index('O1')],
+           baseline=None, mode="logratio",
            title=power.ch_names[epoched.ch_names.index('O1')])
 
 fig, axes = plt.subplots(1, 2, figsize=(7, 4), constrained_layout=True)
@@ -1081,19 +1096,19 @@ def run_sim(g2do_params,conn=None,
             stim_eqn_onset =None,
             stim_eqn_T = None,
             stim_eqn_tau = None,
-            stim_weight = None, 
+            stim_weight = None,
             leadfield = None):
 
     if conn == None:
         conn = connectivity.Connectivity(load_default=True)
-    
+
     model = models.Generic2dOscillator(**g2do_params)
     cpl=coupling.Linear(a=np.array(lca))
     solver=integrators.HeunDeterministic(dt=0.1)
     mons=(monitors.TemporalAverage(period=tavg_per),)
-    
+
     eqn_t = equations.PulseTrain()
-    eqn_t.parameters['onset'] = stim_eqn_onset  
+    eqn_t.parameters['onset'] = stim_eqn_onset
     eqn_t.parameters['T'] = stim_eqn_T
     eqn_t.parameters['tau'] = stim_eqn_tau
 
@@ -1104,24 +1119,24 @@ def run_sim(g2do_params,conn=None,
                                     weight=weighting)
     stimulus.configure_space()
     stimulus.configure_time(np.arange(0., 3e3, 2**-4))
-    
+
     sim = simulator.Simulator(model = model,connectivity=conn,coupling=cpl,
-                            integrator=solver, 
+                            integrator=solver,
                             monitors=mons,
                             stimulus=stimulus)
     sim.configure()
 
-    (tavg_time, tavg_data), = sim.run(simulation_length=sim_len) 
-    
-    
+    (tavg_time, tavg_data), = sim.run(simulation_length=sim_len)
+
+
     df_tavg = pd.DataFrame(np.squeeze(tavg_data),index=tavg_time)
     df_tavg.index.names = ['t']
     df_tavg.columns.names= ['node']
-    df_tavg.columns = conn.region_labels 
-    
+    df_tavg.columns = conn.region_labels
+
     EEG = leadfield.dot(np.array(df_tavg).T).T # EEG shape [n_samples x n_eeg_channels]
-    
-    # reference is mean signal, tranposing because trailing dimension of arrays must agree 
+
+    # reference is mean signal, tranposing because trailing dimension of arrays must agree
     EEG = (EEG.T - EEG.mean(axis=1).T).T
 
     # analyze signal, get baseline and frequency
@@ -1129,7 +1144,7 @@ def run_sim(g2do_params,conn=None,
     EEG = EEG - EEG.mean(axis=0)  # center EEG
 
     plot_pattern(stimulus)
-    
+
     return df_tavg, EEG
 
 
@@ -1139,8 +1154,8 @@ def run_sim(g2do_params,conn=None,
 gamma_sp = 1.21
 epsilon_sp =  12.3083
 
-# is this the correct? 
-# - units in Spiegler are S^-1. 
+# is this the correct?
+# - units in Spiegler are S^-1.
 # - default value for g2do d is 0.02
 # - so this gives 0.07674
 eta_sp = np.array([(1/1000.) * 76.74])   #eta_sp = 76.74 # 1. # 76.74 ##1. # 76.74 # 1.
@@ -1150,10 +1165,10 @@ eta_sp = np.array([(1/1000.) * 76.74])   #eta_sp = 76.74 # 1. # 76.74 ##1. # 76.
 sp_g2do_params = dict(d = eta_sp,
                       tau = np.array(1.),
                       f = np.array(1.),
-                      e = np.array(3.0), 
+                      e = np.array(3.0),
                       g = np.array(-gamma_sp),
-                      alpha = np.array(2.), 
-                      gamma = np.array(1.), 
+                      alpha = np.array(2.),
+                      gamma = np.array(1.),
                       c = np.array(0.),
                       b= np.array(-epsilon_sp), # should not be negative? LOOKS LIKE IT AL COMES DOWN TO THIS PARAM
                       beta = np.array(1.0),
@@ -1184,7 +1199,7 @@ stim_weighting[np.where(stim_weights!=0)[0]] = stim_weight
 
 
 df_tavg_sp1, EEG = run_sim(sp_g2do_params,conn=conn, lca=0.5,sim_len=5000, \
-                      stim_eqn_onset =1250, stim_eqn_T = 1500.0, 
+                      stim_eqn_onset =1250, stim_eqn_T = 1500.0,
                       stim_eqn_tau = 50.0, \
                       stim_weight=stim_weighting, leadfield=leadfield)
 
@@ -1224,22 +1239,22 @@ evoked.plot_joint(ts_args=ts_args, times=times, title='Propagation pattern');
 
 # ### Conclusions
 
-# 
+#
 
 # ### References
 
-# 
-# > Jansen, B.H. and Rit, V.G. (1995) **Electroencephalogram and visual evoked potential generation in a mathematical model of coupled cortical columns.** *Biological cybernetics*, 73(4), pp.357-366.    
-# 
-# > Da Silva, F.L., Hoeks, A., Smits, H. and Zetterberg, L.H. (1974). **Model of brain rhythmic activity.** *Kybernetik*, 15(1), pp.27-37.  
-# 
-# > David, O. and Friston, K.J. (2003) **A neural mass model for MEG/EEG: coupling and neuronal dynamics.** *NeuroImage*, 20(3), pp.1743-1755.  
-# 
+#
+# > Jansen, B.H. and Rit, V.G. (1995) **Electroencephalogram and visual evoked potential generation in a mathematical model of coupled cortical columns.** *Biological cybernetics*, 73(4), pp.357-366.
+#
+# > Da Silva, F.L., Hoeks, A., Smits, H. and Zetterberg, L.H. (1974). **Model of brain rhythmic activity.** *Kybernetik*, 15(1), pp.27-37.
+#
+# > David, O. and Friston, K.J. (2003) **A neural mass model for MEG/EEG: coupling and neuronal dynamics.** *NeuroImage*, 20(3), pp.1743-1755.
+#
 # > Spiegler, A., Knösche, T.R., Schwab, K., Haueisen, J. and Atay, F.M. (2011). **Modeling brain resonance phenomena using a neural mass model.** *PLoS Comput Biol*, 7(12), p.e1002298.
-# 
+#
 # > Momi, D., Wang, Z., Griffiths, J.D. (2023). **TMS-Evoked Responses Are Driven by Recurrent Large-Scale Network Dynamics
-# .** *eLife*, 111, pp.385-430.  
-# 
+# .** *eLife*, 111, pp.385-430.
+#
 
 # #### For any question feel free to reach out:
 
@@ -1266,7 +1281,3 @@ evoked.plot_joint(ts_args=ts_args, times=times, title='Propagation pattern');
 
 
 # In[ ]:
-
-
-
-
